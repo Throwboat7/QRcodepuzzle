@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #000000;
+}
+
+#puzzleGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: repeat(5, 150px);
+  grid-gap: 0px;
+}
+
+.puzzle-piece {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-color: #1A1D26;
+  transition: transform 0.2s ease-out;
+}
+
+.empty {
+  background-color: #000000;
+}
